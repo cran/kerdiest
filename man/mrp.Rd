@@ -4,12 +4,12 @@
 Mean return period estimation
 }
 \description{
-This functions computes an estimate of the time between two values of a concrete level (size of an
-earthquake, flow lewel, wind speed... ).
+This functions computes an estimate of the time between two values of a concrete
+level (size of an earthquake, flow lewel, wind speed... ).
 }
 \usage{
-mrp(type_kernel = "n", vec_data, y = seq(min(vec_data), max(vec_data), 
-length.out = 50), bw = PBbw(type_kernel = "n", vec_data, 2), landa)
+mrp(type_kernel = "n", vec_data, y = NULL, 
+bw = PBbw(type_kernel = "n", vec_data, 2), lambda)
 }
 \arguments{
  \item{type_kernel}{The kernel function. You can use 
@@ -17,24 +17,25 @@ length.out = 50), bw = PBbw(type_kernel = "n", vec_data, 2), landa)
  "t" Triweight.  The Normal kernel is used by default.
 }
    \item{vec_data}{
-The data sample (earthquake magnitudes, flow levels, wind speed...).
+The data sample (earthquake magnitudes, flow levels, wind speed... ).
 }
   \item{y}{
-A grid or a singular value where the estimator is computed.
+A grid or a singular value where the estimator is computed. By default,
+a grid of 50 values between the minimum and the maximum of the data is
+computed.
 }
   \item{bw}{
 The bandwidth parameter. The plug-in method of Polansky and Baker (2000) is 
 used by default.
 }
- \item{landa}{
+ \item{lambda}{
 The mean activity rate.
 }
 }
 \details{
-The mean return period is usually calculated assuming that the occurrence process of
-the events
-follows a Poisson one. In this case, the mean return period of events of
-size \code{c} is calculated as
+The mean return period is usually calculated assuming that the occurrence 
+process of the events follows a Poisson one. In this case, the mean return 
+period of events of size \code{c} is calculated as
 \deqn{   T(c) = \frac{1}{ \lambda (1-F_h(c))}.}
 In Orlecka-Sikora (2008) or Quintela del Rio (2010) an application to earthquake
 data is made. 
@@ -89,11 +90,11 @@ y2s<-as.POSIXct(y1s)
 z<-years(y2s)
 n.years<-length(levels(z))
 # the mean rate of earthquakes per year
-landa<-length(mg)/n.years
+lambda<-length(mg)/n.years
   \dontrun{
 # we estimate the mean return period (in years) between earthquakes of 
 # the same magnitude
-est2<-mrp(vec_data=mg, landa=landa)
+est2<-mrp(vec_data=mg, lambda=lambda)
 plot(est2$grid, est2$Estimated_values, type="l", 
 xlab="magnitude", ylab="Mean return period (years)")
  }
@@ -106,12 +107,10 @@ year<-saltriver$year
 plot(year,peak, type="l",ylab="Annual peak flow")
  }
  #  mean return period for the Saltriver data 
-rp<-mrp(type_kernel="n", vec_data=peak, landa=1)
+rp<-mrp(type_kernel="n", vec_data=peak, lambda=1)
  \dontrun{
 plot(rp$grid, rp$Estimated_values, type="l",
-xlab="Flow level",
-ylab="Years ",
-main="Mean return period" )
+xlab="Flow level", ylab="Years ", main="Mean return period")
 }
 }
 \keyword{ smooth }

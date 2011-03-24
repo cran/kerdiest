@@ -7,25 +7,23 @@
  The bandwidth parameter for the distribution function kernel estimator is calculated,
 using the plug-in method of Polansky and Baker (2000). Four possible kernel 
 functions can be used for the kernel estimator:  "e" Epanechnikov,	"n" Normal, 
-"b" Biweight and "t" Triweight. A kernel estimator of the second 
-derivative of the distribution is needed, and only the kernel normal is used in
-this case.
+"b" Biweight and "t" Triweight. Because kernel estimators of derivatives of order
+bigger than two are required, only the normal kernel is used in this case.
 }
 \usage{
 PBbw(type_kernel = "n", vec_data, num_stage = 2)
 }
 \arguments{
   \item{type_kernel}{
-The kernel function used. You can use 
-  four types:   "e" Epanechnikov,	"n" Normal,  "b" Biweight and
- "t" Triweight. The kernel normal is used by default.
+The kernel function used. You can use four types: "e" Epanechnikov,	"n" Normal,
+"b" Biweight and "t" Triweight. The kernel normal is used by default.
 }
   \item{vec_data}{
 The data sample.
 }
   \item{num_stage}{
 The number of iterations in the Polansky and Baker's method. b=2 is usually a
-good option, and this is the value by default.
+good option, and this is the value by default. b=3 or b=4 are also allowed.
 }
 }
 

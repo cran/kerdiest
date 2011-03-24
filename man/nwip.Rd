@@ -1,5 +1,6 @@
 \name{nwip}
 \alias{nwip}
+\docType{data}
 \title{ Earthquakes of the Norwesth of the Iberian Peninsula}
 \description{
 This data set corresponds to the earthquakes occurred in the Norwesth of the 
@@ -26,8 +27,8 @@ of Galicia (Spain) and northern Portugal.
 }
 
 \source{
-The data catalogue has been obtained from the National Geographic Institute (IGN) of Spain.
-The web page is www.ign.es.
+The data catalogue has been obtained from the National Geographic Institute 
+(IGN) of Spain. The web page is www.ign.es.
 
 }
 \references{

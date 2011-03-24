@@ -11,8 +11,8 @@ Computes the value of the kernel estimator of the distribution function, in a
  plug-in method of Polansky and Baker (2000).
 }
 \usage{
-kde(type_kernel = "n", vec_data, y = seq(min(vec_data), max(vec_data),
- length.out = 100), bw = PBbw(type_kernel = "n", vec_data, 2))
+kde(type_kernel = "n", vec_data, y = NULL, bw = PBbw(type_kernel = "n", 
+vec_data, 2))
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -22,8 +22,8 @@ kde(type_kernel = "n", vec_data, y = seq(min(vec_data), max(vec_data),
 }
   \item{vec_data}{  The data sample.   }
 
-  \item{y}{The single value or the grid vector where we estimate the
-   distribution function. By default, a grid of 100 equidistant points from the minimum 
+  \item{y}{The single value or the grid vector where the distribution function
+ is estimated. By default, a grid of 100 equidistant points from the minimum 
    to the maximum of the data sample is selected.
 }
   \item{bw}{The bandwidth used. If it is not provided, the Plug-in bandwidth 
@@ -51,12 +51,12 @@ Computation and Simulation} \bold{65}, pp. 63-80.
 }
 
 \examples{
-# comparison of three bandwidth selection methods
+# Comparison of three bandwidth selection methods
 
 x<-rnorm(100)
-# we calculate the bandwidth by cross-validation, plug-in of Altman and Leger
-# and plug-in of Polansky and Baker, using a normal kernel and a standard
-# setting of parameters, in each case
+# The bandwidths by cross-validation, plug-in of Altman and Leger
+# and plug-in of Polansky and Baker are calculated, using a normal kernel and a 
+# standard setting of parameters, in each case
 h_CV<-CVbw(vec_data=x)$bw
 # plug-in of Altman and Leger
 h_AL<- ALbw(vec_data=x)
@@ -69,8 +69,7 @@ F_AL<-kde(vec_data=x, bw= h_AL)
 F_PB<-kde(vec_data=x, bw= h_PB)
 y<-F_CV$grid
 Ft<-pnorm(y)
-# plot of the theoretical and estimated distribution functions
- require(graphics)
+require(graphics)
 plot(y,Ft, ylab="Distribution", xlab="data", type="l", lty=1)
 lines(y,F_CV$Estimated_values, type="l",lty=2)
 lines(y,F_AL$Estimated_values, type="l",lty=3)

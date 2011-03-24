@@ -7,16 +7,16 @@ Salt River near Roosevelt, AZ, USA, for 1924-2006.
 }
 \description{
 The annual peak instantaneous flow of the Salt River near Roosevelt, AZ, USA, 
-for 1924-2006. Data are in cfs (0.028317 m3/s); water year October-September. The data were
-examined in several papers related with extreme values in hydrology. Among
-others, they were analyzed by Anderson and Meerschaert (1998) and
-Dettinger and Diaz (2000), where they were fitted to a GEV and a GPD 
+for 1924-2009. Data are in cfs (0.028317 m3/s); water year October-September. 
+The data were examined in several papers related with extreme values in
+ hydrology. Among others, they were analyzed by Anderson and Meerschaert (1998)
+  and Dettinger and Diaz (2000), where they were fitted to a GEV and a GPD 
 distribution. In Quintela del Rio (2011), a nonparametric analysis for this
 data set is made.
 }
 \usage{data(saltriver)}
 \format{
-  A data frame with 82 observations on the following 2 variables.
+  A data frame with 85 observations on the following 2 variables.
   \describe{
     \item{\code{year}}{Year}
     \item{\code{peakflow}}{The annual observed maximum peak flow}

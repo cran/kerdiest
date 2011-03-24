@@ -1,7 +1,7 @@
 ef <-
 function(type_kernel="n",vec_data,
 c, bw=PBbw(type_kernel="n", vec_data, 2), Dmin=0, Dmax=15,
-size_grid=50, landa)
+size_grid=50, lambda)
 # INPUTS:
 #   "type_kernel" kernel function: "e" Epanechnikov,	"n" Normal, 
 #                                  "b" Biweight, "t" Triweight         
@@ -22,7 +22,7 @@ size_grid=50, landa)
 		D<-seq(Dmin, Dmax,length.out=size_grid)
 		F_c<- kde(type_kernel, vec_data=vec_data,
 		y=c,bw=bw)$Estimated_values
-		exc<-1-exp(-landa*D*(1-F_c))
+		exc<-1-exp(-lambda*D*(1-F_c))
   	return(list(Estimated_values = exc, grid=D, bw = bw))
 }
 

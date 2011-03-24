@@ -21,6 +21,12 @@ The data sample.
 }
 \value{ A real value for the bandwidth parameter.
 }
+\details{
+Altman and Leger (1995) recommend the use of the Epanechnikov kernel, because
+in this case the rate of convergence for the kernel derivative estimator is 
+improved. For the sake of uniformity along the package, the gaussian kernel is 
+used by default, but the user can obviously choose the Epanechnikov function.
+ }
 \references{ Altman, N., Leger, C. (1995) Bandwidth selection for kernel distribution 
 function estimation. \emph{Journal of Statistical Planning and Inference}
  \bold{46}, pp. 195--214. 
@@ -38,7 +44,7 @@ h_AL
 x<-rnorm(1000)
 h_AL<-ALbw(vec_data=x)
 F_AL<-kde(vec_data=x, bw=h_AL)
-plot(F_AL$grid, F_AL$Estimated_values, type="l")
+plot(F_AL$grid,F_AL$Estimated_values,type="l")
 }
 \dontrun{
 ##  Plotting the distribution function estimate controling the grid points

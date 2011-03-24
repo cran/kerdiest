@@ -2,8 +2,7 @@
 \alias{CVbw}
 
 \title{
-Computes the cross-validation bandwidth of 
-Bowman et al (1998).
+Computes the cross-validation bandwidth of Bowman et al (1998).
 }
 \description{
 The bandwidth parameter for the distribution function kernel estimator is calculated,
@@ -13,9 +12,7 @@ kernel functions can be used:  "e" Epanechnikov, "n" Normal, "b" Biweight and
  calculated using the Simpson's rule.
 }
 \usage{
-CVbw(type_kernel = "n", vec_data, n_pts = 100, seq_bws =
- seq((max(vec_data) - min(vec_data))/200,
- (max(vec_data) - min(vec_data))/2, length.out = 50))
+CVbw(type_kernel = "n", vec_data, n_pts = 100, seq_bws =NULL)
 }
  \arguments{
   \item{type_kernel}{  The kernel function. You can use 
@@ -33,7 +30,7 @@ depending on your sample size. 100 points are used by default.
 }
   \item{seq_bws}{
 The sequence of bandwidths in which to compute the cross-validation function. 
-By default, a grid consisting in a sequence of 50 points is constructed, from the 
+By default, the procedure defines a sequence of 50 points, from the 
 range of the data divided by 200 to the range divided by 2.
 }
   }

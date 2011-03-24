@@ -4,7 +4,7 @@
 Return level estimation
 }
 \description{
-the T-return level  is
+The T-return level  is
 defined as the value of the observed variable that can be
 expected to be once exceeded during a T-period of
 time. This is computed as the quantile of the distribution, corresponding 
@@ -20,7 +20,7 @@ vec_data, 2))
  "t" Triweight.  The Normal kernel is used by default.
 }
    \item{vec_data}{
-The data sample (earthquake magnitudes, flow levels, wind speeds...).
+The data sample (earthquake magnitudes, flow levels, wind speeds... ).
 }
   \item{T}{             
  A particular value of time, or an array of time values.
@@ -34,7 +34,8 @@ used by default.
 In several scientific fields results of interest to estimate quantiles
 corresponding to a probability of exceedance. For example, in hydrology, 
 the T-return level  \eqn{x_T} is defined as the value of the observed flow
-that can be expected to be once exceeded during a T-period of time; that is, the flood quantile
+that can be expected to be once exceeded during a T-period of time; that is, 
+the quantile
  \deqn{    x_T=F^{-1}(1-\frac{1}{T}).      }
 We can estimate it directly by
   \deqn{    \hat{x}_T=F_h^{-1}(1-\frac{1}{T}).      }
