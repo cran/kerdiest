@@ -60,5 +60,4 @@ function(type_kernel="n", vec_data, num_stage=2)
 
   return(PBbw)
 
-}     #end h_opt_PB
-
+}

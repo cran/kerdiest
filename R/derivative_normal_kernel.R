@@ -14,4 +14,3 @@ function(ord, u)
 				result <- (1/(sqrt(2 * pi)))* exp(-(u^2)/2) * (u^8 - (28*(u^6)) + (210*(u^4)) - (420*(u^2)) + 105)
 		return(result)
 	}
-

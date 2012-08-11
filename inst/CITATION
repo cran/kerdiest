@@ -1,0 +1,20 @@
+citHeader("To cite kerdiest in publications use:")
+
+citEntry(entry = "Article",
+  title        = "Nonparametric Kernel Distribution Function Estimation with {kerdiest}: An {R} Package for Bandwidth Choice and Applications",
+  author       = personList(as.person("Alejandro Quintela-del-R\\'io"),
+                   as.person("Graciela Est\\'evez-P\\'erez")),
+  journal      = "Journal of Statistical Software",
+  year         = "2012",
+  volume       = "50",
+  number       = "8",
+  pages        = "1--21",
+  url          = "http://www.jstatsoft.org/v50/i08/",
+
+  textVersion  =
+  paste("Alejandro Quintela-del-Rio, Graciela Estevez-Perez (2012).",
+        "Nonparametric Kernel Distribution Function Estimation with kerdiest: An R Package for Bandwidth Choice and Applications.",
+        "Journal of Statistical Software, 50(8), 1-21.",
+        "URL http://www.jstatsoft.org/v50/i08/.")
+)
+

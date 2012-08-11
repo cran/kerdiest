@@ -56,4 +56,3 @@ function(type_kernel,u)
 	  }
 
 }
-

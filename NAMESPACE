@@ -1,1 +1,1 @@
-export(ALbw,CVbw,PBbw,kde,mrp,ef,rl)
+exportPattern("^[[:alpha:]]+")

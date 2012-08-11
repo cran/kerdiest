@@ -25,5 +25,4 @@ seq_bws=NULL)
     i0 <- which.min(CVfunction)
     CVbw_val <- seq_bws[i0]
     return(list(seq_bws=seq_bws, CVfunction=CVfunction, bw=CVbw_val))
-}   # end Crossvalidation_bandwidth
-
+}

@@ -25,4 +25,3 @@ size_grid=50, lambda)
 		exc<-1-exp(-lambda*D*(1-F_c))
   	return(list(Estimated_values = exc, grid=D, bw = bw))
 }
-

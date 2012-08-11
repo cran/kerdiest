@@ -18,4 +18,3 @@ function(type_kernel)
       result <- 1/9	
   return(result)
 }
-

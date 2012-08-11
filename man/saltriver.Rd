@@ -38,6 +38,12 @@ Quintela-del-Rio, A. (2011)  On bandwidth selection for nonparametric estimation
   in flood frequency analysis. \emph{Hydrological Processes}  \bold{25},
   pp. 671--678.
 
+Quintela-del-Rio, A. and Estevez-Perez, G. (2012) 
+Nonparametric Kernel Distribution Function Estimation with kerdiest: 
+An R Package for Bandwidth Choice and Applications, 
+\emph{Journal of Statistical Software} \bold{50(8)}, pp. 1-21.
+ URL http://www.jstatsoft.org/v50/i08/.
+
 }
 \examples{
 data(saltriver)

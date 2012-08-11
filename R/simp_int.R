@@ -15,4 +15,3 @@ function (x, fx, n.pts = 256, ret = FALSE)
     invisible(list(value = sum(integral), cdf = list(x = ap$x[2 * 
         (1:n.pts)], y = cumsum(integral))))
 }
-

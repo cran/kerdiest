@@ -5,4 +5,3 @@ function(type_kernel, y1,x1,bandwidth,pvalue)
   b<-pvalue
   return(a-b)
   }
-

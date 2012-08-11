@@ -21,4 +21,3 @@ y=NULL, bw=PBbw(type_kernel="n", vec_data, 2))
 		result <- apply(aux,1,mean)
   	return(list(Estimated_values = result, grid=y, bw = bw))
 }
-

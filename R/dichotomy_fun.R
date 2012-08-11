@@ -22,4 +22,3 @@ function(type_kernel="n", array1,s0,s1,bandwidth,S)
   }
 return(xold)
 }
-

@@ -65,6 +65,12 @@ analysis. \emph{Tectonophysics} \bold{456}, 38--51.
 Quintela-del-Rio, A. (2010) On non-parametric techniques for area-characteristic
  seismic hazard parameters. \emph{Geophysical Journal International}  \bold{180},
   pp. 339--346.
+
+Quintela-del-Rio, A. and Estevez-Perez, G. (2012) 
+Nonparametric Kernel Distribution Function Estimation with kerdiest: 
+An R Package for Bandwidth Choice and Applications, 
+\emph{Journal of Statistical Software} \bold{50(8)}, pp. 1-21.
+ URL http://www.jstatsoft.org/v50/i08/.
 }
 \author{ Graciela Estevez Perez \email{graci@udc.es} and Alejandro Quintela del Rio 
 \email{aquintela@udc.es}

@@ -22,4 +22,3 @@ bw=PBbw(type_kernel="n", vec_data, 2), lambda)
 		mrp_result<-1/(lambda*(1-result))
   	return(list(Estimated_values = mrp_result, grid=y, bw = bw))
 }
-

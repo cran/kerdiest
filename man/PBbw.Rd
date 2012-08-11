@@ -33,6 +33,12 @@ good option, and this is the value by default. b=3 or b=4 are also allowed.
 Polansky, A.M. and Baker, E.R. (2000) Multistage plug-in bandwidth selection 
 for kernel distribution function estimates, \emph{Journal of Statistical 
 Computation and Simulation} \bold{65}, pp. 63-80.
+
+Quintela-del-Rio, A. and Estevez-Perez, G. (2012) 
+Nonparametric Kernel Distribution Function Estimation with kerdiest: 
+An R Package for Bandwidth Choice and Applications, 
+\emph{Journal of Statistical Software} \bold{50(8)}, pp. 1-21.
+ URL http://www.jstatsoft.org/v50/i08/.
 }
 \author{ Graciela Estevez Perez \email{graci@udc.es} and Alejandro Quintela del Rio 
 \email{aquintela@udc.es}

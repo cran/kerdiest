@@ -20,4 +20,3 @@ function(type_kernel,y,x,bw)
 	  }
   	return(result)
 }
-

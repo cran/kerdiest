@@ -30,6 +30,12 @@ used by default, but the user can obviously choose the Epanechnikov function.
 \references{ Altman, N., Leger, C. (1995) Bandwidth selection for kernel distribution 
 function estimation. \emph{Journal of Statistical Planning and Inference}
  \bold{46}, pp. 195--214. 
+
+Quintela-del-Rio, A. and Estevez-Perez, G. (2012) 
+Nonparametric Kernel Distribution Function Estimation with kerdiest: 
+An R Package for Bandwidth Choice and Applications, 
+\emph{Journal of Statistical Software} \bold{50(8)}, pp. 1-21.
+ URL http://www.jstatsoft.org/v50/i08/.
 }
 \author{ Graciela Estevez Perez \email{graci@udc.es} and Alejandro Quintela del Rio 
 \email{aquintela@udc.es}

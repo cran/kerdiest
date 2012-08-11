@@ -18,4 +18,3 @@ function(type_kernel)
       result <- 2*0.095183	
   return(result)
 }
-

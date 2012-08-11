@@ -35,6 +35,12 @@ The data catalogue has been obtained from the National Geographic Institute
 Rueda, J., and J. Mezcua (2001) Sismicidad,  sismotectonica y peligrosidad 
 sismica en Galicia, \emph{ IGN Technical Publication} \bold{ 35}.
 
+
+Quintela-del-Rio, A. and Estevez-Perez, G. (2012) 
+Nonparametric Kernel Distribution Function Estimation with kerdiest: 
+An R Package for Bandwidth Choice and Applications, 
+\emph{Journal of Statistical Software} \bold{50(8)}, pp. 1-21.
+ URL http://www.jstatsoft.org/v50/i08/.
 }
 \examples{
 data(nwip)

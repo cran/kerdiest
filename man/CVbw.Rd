@@ -44,6 +44,12 @@ range of the data divided by 200 to the range divided by 2.
 \references{
 Bowman, A.W., Hall, P. and Prvan,T. (1998) Cross-validation for the smoothing of 
 distribution functions, \emph{Biometrika} \bold{85}, pp. 799-808.
+
+Quintela-del-Rio, A. and Estevez-Perez, G. (2012) 
+Nonparametric Kernel Distribution Function Estimation with kerdiest: 
+An R Package for Bandwidth Choice and Applications, 
+\emph{Journal of Statistical Software} \bold{50(8)}, pp. 1-21.
+ URL http://www.jstatsoft.org/v50/i08/.
 }
 \author{ Graciela Estevez Perez \email{graci@udc.es} and Alejandro Quintela del Rio 
 \email{aquintela@udc.es}

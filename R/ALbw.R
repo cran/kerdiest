@@ -31,5 +31,4 @@ function(type_kernel="n", vec_data)
   
   return(ALbw)
 
-}  # end 
-
+}

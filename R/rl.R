@@ -24,4 +24,3 @@ T, bw=PBbw(type_kernel="n", vec_data, 2))
 	}
 	return(rl)
 }
-
