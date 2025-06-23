@@ -10,14 +10,11 @@
 \alias{ro_k}
 \alias{kernel_function}
 \alias{kernel_function_distribution}
-\alias{simp_int} 
+\alias{simp_int}
 \title{Internal Grid Functions}
-\description{
-  Internal Grid functions
+\description{Internal Grid functions
 }
-\details{
-  These are not to be called by the user (or in some cases are just
-  waiting for proper documentation to be written :).
+\details{Internal functions not to be called by the user.
 }
-\keyword{ internal }
+\keyword{internal}
 

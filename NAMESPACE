@@ -1,1 +1,4 @@
-exportPattern("^[[:alpha:]]+")
+importFrom("stats", "IQR", "approx", "dnorm", "pnorm", "quantile", "sd")
+
+export(ALbw, CVbw, ef, kde, mrp, PBbw, rl)
+
